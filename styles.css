@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "NTR", sans-serif;
+  font-size: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgb(0, 255, 0), yellow);
+}
+
+h1 {
+  font-family: "Mali", cursive;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 1px 5px black;
+  color: yellow;
+  text-transform: uppercase;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  position: relative;
+}
+
+.input-task {
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.add-task {
+  width: 40px;
+  height: 40px;
+  background-color: chocolate;
+  position: absolute;
+  top: 5px;
+  right: 37.5%;
+  color: white;
+}
+
+.task-list {
+}
