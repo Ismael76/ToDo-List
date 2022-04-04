@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mali:wght@700&family=NTR&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/e1a99790da.js"
       crossorigin="anonymous"
@@ -17,17 +21,23 @@
     <main>
       <h1>TODO List</h1>
       <div class="task-container">
-        <input class="input-task" type="text" name="task" id="" />
-        <i class="fa-regular fa-light-emergency"></i>
-        <button class="add-task" type="submit">+</button>
+        <div class="input-container">
+          <input class="input-task" type="text" name="task" id="" />
+          <i class="fa-regular fa-light-emergency"></i>
+          <button class="add-task" type="submit">+</button>
+        </div>
         <div class="task-list">
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 5</li>
-          </ul>
+          <div class="task-list__items">
+            <span class="task-list__info">Task 1</span>
+            <div class="task-list__btns">
+              <button class="complete-btn">
+                <i class="fas fa-solid fa-check"></i>
+              </button>
+              <button class="del-btn">
+                <i class="fas fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
