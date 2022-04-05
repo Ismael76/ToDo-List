@@ -54,7 +54,7 @@ h1 {
   height: 40px;
   background-color: chocolate;
   position: absolute;
-  top: 5px;
+  top: 6.5px;
   right: 10px;
   color: white;
 }
@@ -70,17 +70,25 @@ h1 {
   margin-top: 2rem;
   font-family: 'Permanent Marker', cursive;
   background-color: white;
-  width: 300px;
+  min-width: 300px;
+  max-width: 350px;
   justify-content: space-between;
-  height: 50px;
+  height: auto;
   padding: .5rem;
   border-radius: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .task-list__info {
+  max-width: 175px;
   margin-left: 1rem;
+  word-wrap: break-word;
 }
 
+.task-btn-container {
+  margin-left: 1rem;
+}
 
 .complete-btn {
   height: 100%;
@@ -112,6 +120,10 @@ h1 {
     }
 
     .task-list__item {
-      width: 500px;
+      min-width: 500px;
+    }
+
+    .task-list__info {
+      max-width: none;
     }
 }

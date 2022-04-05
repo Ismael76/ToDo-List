@@ -46,6 +46,7 @@ function addTask() {
     taskInfo.classList.add('task-list__info');
 
     taskContainer.append(taskBtnContainer);
+    taskBtnContainer.classList.add('task-btn-container')
 
     taskBtnContainer.append(completeBtn);
     completeBtn.classList.add("complete-btn");
