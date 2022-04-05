@@ -1,4 +1,5 @@
 const addBtn = document.querySelector('.add-task');
+const addIcon = document.querySelector('.add-icon');
 const taskInput = document.querySelector('.input-task');
 const taskList = document.querySelector('.task-list');
 
@@ -7,6 +8,8 @@ const taskList = document.querySelector('.task-list');
 let keys = Object.keys(localStorage);
 
 addBtn.addEventListener('click', addTask);
+addIcon.addEventListener('click', addTask);
+
 
 //When enter button is pressed it adds a task to the task list
 window.addEventListener('keydown', (e) => {
