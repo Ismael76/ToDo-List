@@ -16,7 +16,6 @@ html {
 body {
   min-height: 100vh;
   background: linear-gradient(to bottom, rgb(0, 255, 0), yellow);
-  font-family: "NTR", sans-serif;
 }
 
 h1 {
@@ -42,6 +41,7 @@ h1 {
   padding: 1.5rem;
   border-radius: 10px;
   width: 100%;
+  font-family: "Mali", cursive;
 }
 
 .input-container {
@@ -61,21 +61,23 @@ h1 {
 
 .task-list {
   margin-top: 10rem;
+  max-height: 500px;
+  overflow: auto;
 }
 
-.task-list__items {
+.task-list__item {
   display: flex;
   margin-top: 2rem;
-  font-family: 'Shadows Into Light', cursive;
-  background-color: red;
+  font-family: 'Permanent Marker', cursive;
+  background-color: white;
   width: 300px;
   justify-content: space-between;
   height: 50px;
   padding: .5rem;
+  border-radius: 10px;
 }
 
 .task-list__info {
-  color: white;
   margin-left: 1rem;
 }
 
@@ -95,13 +97,21 @@ h1 {
   background-color: orange;
 }
 
+.complete-btn:hover {
+  background-color: rgb(59, 177, 59);
+}
+
+.del-btn:hover {
+  background-color: rgb(255, 193, 77);
+}
+
 
 @media screen and (min-width: 768px) {
     .input-container {
       width: 500px;
     }
 
-    .task-list__items {
+    .task-list__item {
       width: 500px;
     }
 }
