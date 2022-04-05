@@ -77,13 +77,13 @@ document.addEventListener('click', (e) => {
     if (e.target.matches('.complete-icon')) {
         e.path[3].style.backgroundColor = "rgba(128, 128, 128, 0.8)";
         e.path[3].firstChild.style.textDecoration = "line-through";
-        console.log(e.path[3].firstChild.innerText);
+        localStorage.removeItem(e.path[3].firstChild.innerText);
     }
 
     if (e.target.matches('.complete-btn')) {
         e.path[2].style.backgroundColor = "rgba(128, 128, 128, 0.8)";
         e.path[2].firstChild.style.textDecoration = "line-through";
-        console.log(e.path[2].firstChild.innerText);
+        localStorage.removeItem(e.path[2].firstChild.innerText);
     }
 
     if (e.target.matches('.delete-icon')) {
