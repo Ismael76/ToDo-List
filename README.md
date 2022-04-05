@@ -1,4 +1,4 @@
-# ToDo-List
+# TODO List
 
 TODO List build using JavaScript, HTML & CSS.
 
