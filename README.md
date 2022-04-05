@@ -1,6 +1,6 @@
 # TODO List
 
-TODO List build using JavaScript, HTML & CSS.
+TODO List built using JavaScript, HTML & CSS.
 
 This TODO List utilizes local storage.
 
